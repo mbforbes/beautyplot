@@ -2,11 +2,34 @@
 
 A single function call to make `matplotlib.pyplot` plots look better. Because neither prettyplotlib nor matplotlibrc worked for me.
 
+<table>
+	<tr>
+		<td>![without](without.png)</td>
+		<td>![with](with.png)</td>
+	</tr>
+</table>
+
 ## Setup
 Add `beautyplot.py` to your `PYTHONPATH` so that Python can find it.
 `source setup.sh`
 
 ## Usage
+`
+import matplotlib.pyplot as plt
+from beautyplot import beautify
+
+# Build your plot
+plt.figure()
+plt.title('Plot title')
+plt.errorbar(xs, ys, yerr=stds, ...)
+...
+
+# Here's the function call
+beautify()
+
+# Then take a look
+plt.show()
+`
 
 ## Features
 ### General
@@ -39,8 +62,8 @@ I may in the future do some digging to detect more information about the
    - [api](http://matplotlib.org/api/ticker_api.html)
 
 0. Set plotting color. Use better colors than 'blue'. Check out:
-   -[example](http://wiki.scipy.org/Cookbook/Matplotlib/Show_colormaps)
-   -[example](http://colorbrewer2.org/)
+   - [example](http://wiki.scipy.org/Cookbook/Matplotlib/Show_colormaps)
+   - [example](http://colorbrewer2.org/)
 
 0. Set plotting style. Lines should be very differentiable, with lots of visual redundancy. This means the following should be different:
    - markers [e.g. circles, triangles, 'x's, ...]
