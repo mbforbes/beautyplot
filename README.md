@@ -10,7 +10,7 @@ A single function call to make `matplotlib.pyplot` plots look better. Because ne
 </table>
 
 ## Setup
-Add `beautyplot.py` to your `PYTHONPATH` so that Python can find it. I've provided a script that does this called 'setup.sh'. You can run it (on Unix-like systems) by typing the following in a terminal:
+Add `beautyplot.py` to your `PYTHONPATH` so that Python can find it. I've provided a script that does this called `setup.sh`. You can run it (on Unix-like systems) by typing the following in a terminal:
 
 ```bash
 source setup.sh
@@ -67,7 +67,7 @@ A lot of things that you need to do to make your graph look good (or that you ne
 
 What I have now might also be too specific (I'm only plotting `errorbar` graphs currently).
 
-I may in the future do some digging to detect more information about the 
+I may in the future do some digging to detect more information about the figure at hand and do specific adjustments based on that. For now, it just does the same thing no matter what you've plotted.
 
 0. Make sure major and minor ticks are specified correctly. Check out:
    - [example](http://matplotlib.org/examples/pylab_examples/major_minor_demo1.html)
