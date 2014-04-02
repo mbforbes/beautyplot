@@ -62,20 +62,21 @@ plt.show()
 ### Fonts
 - set all fonts to be serif (like Times New Roman)
 
+## Support
+I'm making this utility "as I go" to support graphs that I need to plot. Here are the ones I've tested so far:
+
+- `errorbar`
+
 ## Things you need to do on your own
-A lot of things that you need to do to make your graph look good (or that you need to do to make this function work) aren't generalizable enough to put here.
-
-What I have now might also be too specific (I'm only plotting `errorbar` graphs currently).
-
-I may in the future do some digging to detect more information about the figure at hand and do specific adjustments based on that. For now, it just does the same thing no matter what you've plotted.
+A lot of things that you need to do to make your graph look good---or that you need to do to make `beautyplot` work well---aren't generalizable enough to put in `beautyplot`.
 
 0. Make sure major and minor ticks are specified correctly. Check out:
    - [example](http://matplotlib.org/examples/pylab_examples/major_minor_demo1.html)
    - [api](http://matplotlib.org/api/ticker_api.html)
 
-0. Set plotting color. Use better colors than 'blue'. Check out:
-   - [example](http://wiki.scipy.org/Cookbook/Matplotlib/Show_colormaps)
-   - [example](http://colorbrewer2.org/)
+0. Set the plotting color. Use better colors than 'blue'. Check out:
+   - [the scipy API for color maps](http://wiki.scipy.org/Cookbook/Matplotlib/Show_colormaps)
+   - [the ColorBrewer color schemes](http://colorbrewer2.org/)
 
 0. Set plotting style. Lines should be very differentiable, with lots of visual redundancy. This means the following should be different:
    - markers [e.g. circles, triangles, 'x's, ...]
