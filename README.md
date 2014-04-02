@@ -14,7 +14,7 @@ Add `beautyplot.py` to your `PYTHONPATH` so that Python can find it.
 `source setup.sh`
 
 ## Usage
-`
+```python
 import matplotlib.pyplot as plt
 from beautyplot import beautify
 
@@ -22,14 +22,14 @@ from beautyplot import beautify
 plt.figure()
 plt.title('Plot title')
 plt.errorbar(xs, ys, yerr=stds, ...)
-...
+#...
 
 # Here's the function call
 beautify()
 
 # Then take a look
 plt.show()
-`
+```
 
 ## Features
 ### General
