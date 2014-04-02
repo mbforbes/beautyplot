@@ -10,18 +10,30 @@ A single function call to make `matplotlib.pyplot` plots look better. Because ne
 </table>
 
 ## Setup
-Add `beautyplot.py` to your `PYTHONPATH` so that Python can find it.
-`source setup.sh`
+Add `beautyplot.py` to your `PYTHONPATH` so that Python can find it. I've provided a script that does this called 'setup.sh'. You can run it (on Unix-like systems) by typing the following in a terminal:
+
+```bash
+source setup.sh
+```
+
+To use it regularly, I recommend you add what's in `setup.sh` it to your `.bashrc` or the like.
 
 ## Usage
 ```python
 import matplotlib.pyplot as plt
 from beautyplot import beautify
 
+# Crunch numbers
+# ...
+
 # Build your plot
 plt.figure()
 plt.title('Plot title')
-plt.errorbar(xs, ys, yerr=stds, ...)
+plt.errorbar(xs,
+	ys,
+	yerr=stds,
+	#aditional formatting goes here
+	)
 #...
 
 # Here's the function call
@@ -44,7 +56,7 @@ plt.show()
 - turn off only right and top ticks
 - set tick direction to be out (pointing out of graph)
 - set all minor ticks labels and marks to be a lighter grey
- - make major and minor ticks longer
+- make major and minor ticks longer
 - make tick numbers farther away (padded) to accomodate longer ticks
 
 ### Fonts
@@ -79,12 +91,8 @@ matplotlib which, because I couldn't get her released code ([prettyplotlib](http
 
 There are several stackoverflow articles that made this possible, which I only thought of keeping track of quite late, but here are a few:
 
-- http://stackoverflow.com/questions/9051494/customizing-just-one-side-of-tick-
-      marks-in-matplotlib-using-spines
+- [Customizing Just One Side of Tick Marks in Matplotlib Using Spines](http://stackoverflow.com/questions/9051494/customizing-just-one-side-of-tick-marks-in-matplotlib-using-spines)
 
-- (use also http://matplotlib.org/api/axes_api.html#matplotlib.axes.Axes.
-      tick_params)
+- (use also [Axes::tick_params](http://matplotlib.org/api/axes_api.html#matplotlib.axes.Axes.tick_params))
 
-- http://stackoverflow.com/questions/6406368/matplotlib-move-x-axis-label-
-      downwards-but-not-x-axis-ticks (though we want the 'wrong' answer, posed
-      in the question, to move the tick numbers)
+- [Matplotlib Move x-axis Label Downwards but not x-axis Ticks](http://stackoverflow.com/questions/6406368/matplotlib-move-x-axis-label-downwards-but-not-x-axis-ticks) (though we want the 'wrong' answer, posed in the question, to move the tick numbers)
