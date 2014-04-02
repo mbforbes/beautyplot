@@ -4,8 +4,8 @@ A single function call to make `matplotlib.pyplot` plots look better. Because ne
 
 <table>
 	<tr>
-		<td>![without](without.png)</td>
-		<td>![with](with.png)</td>
+		<td><img alt="without" src="without.png"></td>
+		<td><img alt="with" src="with.png"></td>
 	</tr>
 </table>
 
