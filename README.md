@@ -73,3 +73,18 @@ I may in the future do some digging to detect more information about the
 0. Set error bar width and cap sizes. Error bars should be thinner than plotting lines. Check out:
    - [example](http://stackoverflow.com/questions/7601334/how-to-set-the-line-width-of-error-bar-caps-in-matplotlib)
  
+ # Acknowledgements
+Thanks to Olga Botvinnik for her [blog post](http://blog.olgabotvinnik.com/post/58941062205/prettyplotlib-painlessly-create-beautiful-matplotlib) of the long (bad) way to do things in
+matplotlib which, because I couldn't get her released code ([prettyplotlib](https://github.com/olgabot/prettyplotlib)) to work, is exactly what I'm doing.
+
+There are several stackoverflow articles that made this possible, which I only thought of keeping track of quite late, but here are a few:
+
+- http://stackoverflow.com/questions/9051494/customizing-just-one-side-of-tick-
+      marks-in-matplotlib-using-spines
+
+- (use also http://matplotlib.org/api/axes_api.html#matplotlib.axes.Axes.
+      tick_params)
+
+- http://stackoverflow.com/questions/6406368/matplotlib-move-x-axis-label-
+      downwards-but-not-x-axis-ticks (though we want the 'wrong' answer, posed
+      in the question, to move the tick numbers)
