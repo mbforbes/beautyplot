@@ -30,7 +30,7 @@ import matplotlib.pyplot as plt
 
 # FUNCTIONS
 
-def beautify():
+def beautify(ax=None):
     '''Apply beautiful settings to an existing graph (figure 1, specifically).
 
     FEATURES:
@@ -86,8 +86,9 @@ def beautify():
     number_font = 'serif'
 
     # Get the figure and axes.
-    fig = plt.figure(1)
-    ax = plt.axes()
+    if ax is None:
+        fig = plt.figure(1)
+        ax = plt.axes()
 
     # Remove 'spines' (axis lines)
     spines_to_remove = ['top', 'right']
