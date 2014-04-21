@@ -1,4 +1,4 @@
-#beautyplot
+# beautyplot
 
 A single function call to make `matplotlib.pyplot` plots look better. Because neither prettyplotlib nor matplotlibrc worked for me.
 
@@ -85,7 +85,7 @@ I may in the future do some digging to detect more information about the figure 
 0. Set error bar width and cap sizes. Error bars should be thinner than plotting lines. Check out:
    - [example](http://stackoverflow.com/questions/7601334/how-to-set-the-line-width-of-error-bar-caps-in-matplotlib)
  
-# Acknowledgements
+## Acknowledgements
 Thanks to Olga Botvinnik for her [blog post](http://blog.olgabotvinnik.com/post/58941062205/prettyplotlib-painlessly-create-beautiful-matplotlib) of the long (bad) way to do things in
 matplotlib which, because I couldn't get her released code ([prettyplotlib](https://github.com/olgabot/prettyplotlib)) to work, is exactly what I'm doing.
 

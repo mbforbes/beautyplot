@@ -56,7 +56,7 @@ def beautify():
 
 
     Things you need to do on your own (that aren't generalizable to put here):
-    ----------------------------------------------------------------------------    
+    ----------------------------------------------------------------------------
 
     - Make sure major and minor ticks are specified correctly. Check out:
           [example] http://matplotlib.org/examples/pylab_examples/
@@ -86,7 +86,7 @@ def beautify():
     number_font = 'serif'
 
     # Get the figure and axes.
-    fig = plt.figure(1)
+    #fig = plt.figure(1)
     ax = plt.axes()
 
     # Remove 'spines' (axis lines)
@@ -133,7 +133,7 @@ def beautify():
         for minor_tick in axis.get_minor_ticks():
             label = minor_tick.label
             label.set_color(more_grey)
-            label.set_family(number_font) 
+            label.set_family(number_font)
 
     # Turn on grid lines for y-only
     plt.grid(axis='y', color=more_grey)
